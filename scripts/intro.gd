@@ -4,6 +4,12 @@ extends Node2D
 
 
 
-func _on_elso_body_entered(_body: Node2D) -> void:
+
+
+
+func _on_intro_body_entered(_body: Node2D) -> void:
+	intro_hang.attenuation = 0
+	intro_hang.max_distance = 100000
 	intro_hang.play()
 	intro_collision.queue_free()
+	

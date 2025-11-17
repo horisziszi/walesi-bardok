@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://wnegbjuxonxw"]
+
+[ext_resource type="Texture2D" uid="uid://cx05vdkkmcvtp" path="res://assets/sprites/bards.png" id="1_1ydlg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ydlg"]
+atlas = ExtResource("1_1ydlg")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjplq"]
+atlas = ExtResource("1_1ydlg")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeqoi"]
+atlas = ExtResource("1_1ydlg")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmblf"]
+atlas = ExtResource("1_1ydlg")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e4uar"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ydlg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjplq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeqoi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmblf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5y3yd"]
+radius = 4.0
+
+[node name="Bard2" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_e4uar")
+autoplay = "default"
+frame = 1
+frame_progress = 0.90256965
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_5y3yd")
