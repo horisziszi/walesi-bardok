@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dbm14d0b4uw11"]
+[gd_scene load_steps=20 format=4 uid="uid://dbm14d0b4uw11"]
 
 [ext_resource type="Script" uid="uid://p7qlsjc4rkkb" path="res://scripts/main.gd" id="1_2k3dv"]
 [ext_resource type="Texture2D" uid="uid://qw8dhwaxqt5u" path="res://assets/sprites/world_tileset.png" id="1_o5qli"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://5l88wr5gsboe" path="res://scenes/nextlevel.tscn" id="3_4038r"]
 [ext_resource type="AudioStream" uid="uid://bvux3g1jdqlog" path="res://assets/sounds/explosion.wav" id="4_hrcei"]
 [ext_resource type="PackedScene" uid="uid://dwnfbp04bek4" path="res://scenes/bard_1.tscn" id="5_alqfr"]
+[ext_resource type="AudioStream" uid="uid://xqu20ae1tp38" path="res://assets/sounds/coin.wav" id="5_xa7n4"]
 [ext_resource type="PackedScene" uid="uid://wnegbjuxonxw" path="res://scenes/bard_2.tscn" id="6_6ep0u"]
 [ext_resource type="PackedScene" uid="uid://bld1hhufybyi2" path="res://scenes/bard_3.tscn" id="7_hrcei"]
 
@@ -568,38 +569,54 @@ stream = ExtResource("4_hrcei")
 [node name="Main02" type="Node" parent="Grounds/versszakok"]
 
 [node name="Main02-kiraly" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main02"]
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Main02-narrator" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main02"]
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Bard3" parent="Grounds/versszakok/Main02" instance=ExtResource("7_hrcei")]
 position = Vector2(2405, 0)
 
 [node name="Main02-bard" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main02/Bard3"]
 position = Vector2(-2393, 58)
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Main03" type="Node" parent="Grounds/versszakok"]
 
 [node name="Main03-kiralynarrator" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main03"]
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Bard2" parent="Grounds/versszakok/Main03" instance=ExtResource("6_6ep0u")]
 position = Vector2(2418, 0)
 
 [node name="Main03-bard" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main03/Bard2"]
 position = Vector2(-2371, 57)
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Main04" type="Node" parent="Grounds/versszakok"]
 
 [node name="Main04-narrator" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main04"]
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Bard1" parent="Grounds/versszakok/Main04" instance=ExtResource("5_alqfr")]
 position = Vector2(2432, 0)
 
 [node name="Main04-bard" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main04/Bard1"]
 position = Vector2(-2352, 56)
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="Main05" type="Node" parent="Grounds/versszakok"]
 
 [node name="Main05-kiralynarrator" type="AudioStreamPlayer2D" parent="Grounds/versszakok/Main05"]
+stream = ExtResource("5_xa7n4")
+bus = &"Versszakok"
 
 [node name="player" parent="." instance=ExtResource("2_0wfyh")]
 position = Vector2(-696, 0)
@@ -678,6 +695,83 @@ position = Vector2(794, -15)
 [node name="Bard43" parent="Bards" instance=ExtResource("6_6ep0u")]
 position = Vector2(858, -15)
 
+[node name="Bard4" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(922, -15)
+
+[node name="Bard6" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(986, -15)
+
+[node name="Bard2" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(1050, -15)
+
+[node name="Bard8" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(1114, -15)
+
+[node name="Bard10" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(1178, -15)
+
+[node name="Bard12" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(1242, -15)
+
+[node name="Bard14" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(1306, -15)
+
+[node name="Bard16" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(1370, -15)
+
+[node name="Bard18" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(1434, -15)
+
+[node name="Bard20" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(1498, -15)
+
+[node name="Bard22" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(1562, -15)
+
+[node name="Bard24" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(1626, -15)
+
+[node name="Bard26" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(1690, -15)
+
+[node name="Bard28" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(1754, -15)
+
+[node name="Bard30" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(1818, -15)
+
+[node name="Bard32" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(1882, -15)
+
+[node name="Bard34" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(1946, -15)
+
+[node name="Bard36" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(2010, -15)
+
+[node name="Bard38" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(2074, -15)
+
+[node name="Bard40" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(2138, -15)
+
+[node name="Bard42" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(2266, -15)
+
+[node name="Bard44" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(2202, -15)
+
+[node name="Bard45" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(2330, -15)
+
 [connection signal="body_entered" from="Grounds/versszakok/szekenbelul" to="." method="_on_szekenbelul_body_entered"]
 [connection signal="body_exited" from="Grounds/versszakok/szekenbelul" to="." method="_on_szekenbelul_body_exited"]
 [connection signal="body_entered" from="Grounds/versszakok/Main01" to="." method="_on_main_01_body_entered"]
+[connection signal="finished" from="Grounds/versszakok/Main02/Main02-kiraly" to="." method="_on_main_02_kiraly_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main02/Main02-narrator" to="." method="_on_main_02_narrator_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main02/Bard3/Main02-bard" to="." method="_on_main_02_bard_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main03/Main03-kiralynarrator" to="." method="_on_main_03_kiralynarrator_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main03/Bard2/Main03-bard" to="." method="_on_main_03_bard_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main04/Main04-narrator" to="." method="_on_main_04_narrator_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main04/Bard1/Main04-bard" to="." method="_on_main_04_bard_finished"]
+[connection signal="finished" from="Grounds/versszakok/Main05/Main05-kiralynarrator" to="." method="_on_main_05_kiralynarrator_finished"]
