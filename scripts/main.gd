@@ -47,7 +47,7 @@ var next_scene = 2   # The first scene to start after sitting in the chair
 
 
 func _ready() -> void:
-	
+	apply_settings_recursive(self)
 	# Hides the Bárdok
 	bard_3.visible = false
 	bard_2.visible = false
@@ -60,6 +60,15 @@ func _ready() -> void:
 	# Disable locks at start
 	left_lock.disabled = true
 	right_lock.disabled = true
+	
+func apply_settings_recursive(node: Node):
+	if node is AudioStreamPlayer2D:
+		node.attenuation = 0
+		node.max_distance = 100000
+
+	for child in node.get_children():
+		apply_settings_recursive(child)
+
 
 func _on_main_01_body_entered(_body: Node2D) -> void:
 	main_01_hang.attenuation = 0
