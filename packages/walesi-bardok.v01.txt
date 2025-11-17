@@ -1,0 +1,11 @@
+Walesi-bárdok játék mi nincs készen:
+
+- LvL1 Szinkronok (Helyettük van az explosion.waw)
+- Lvl1 dekorációk
+
+- LvL2 Feliratok
+- LvL2 Szinkronok (Helyettük van az explosion.waw és a coin.waw)
+- LvL2 asztal étel és ital dekorációk
+
+- LvL3 Szinkronok (Helyettük van az explosion.waw)
+- Lvl3 dekorációk
