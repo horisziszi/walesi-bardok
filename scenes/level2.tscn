@@ -524,7 +524,7 @@ tile_map_data = PackedByteArray("AAD8/wAAAAAHAA8AAAD8/wEAAAAHAA8AAAD8/wIAAAAHAA8
 tile_set = SubResource("TileSet_sugp2")
 
 [node name="Chair" type="TileMapLayer" parent="Grounds"]
-tile_map_data = PackedByteArray("AADh////AAAOAAAAABDj////AAAOAAAAABDl////AAAOAAAAABDn////AAAOAAAAABDp////AAAOAAAAABDr////AAAOAAAAABDt////AAAOAAAAABDv////AAAOAAAAABDx////AAAOAAAAABDz////AAAOAAAAABD1////AAAOAAAAABD3////AAAOAAAAABD5////AAAOAAAAABD7////AAAOAAAAABD9////AAAOAAAAABD/////AAAOAAAAABABAP//AAAOAAAAABADAP//AAAOAAAAABAFAP//AAAOAAAAABAHAP//AAAOAAAAABAJAP//AAAOAAAAABALAP//AAAOAAAAABANAP//AAAOAAAAABAPAP//AAAOAAAAABARAP//AAAOAAAAABATAP//AAAOAAAAABAVAP//AAAOAAAAABAXAP//AAAOAAAAABAZAP//AAAOAAAAABAbAP//AAAOAAAAABAdAP//AAAOAAAAABAfAP//AAAOAAAAABAhAP//AAAOAAAAABAjAP//AAAOAAAAABAlAP//AAAOAAAAABAnAP//AAAOAAAAABApAP//AAAOAAAAABArAP//AAAOAAAAABAtAP//AAAOAAAAABAvAP//AAAOAAAAABAxAP//AAAOAAAAABAzAP//AAAOAAAAABA1AP//AAAOAAAAABA3AP//AAAOAAAAABA5AP//AAAOAAAAABA7AP//AAAOAAAAABA9AP//AAAOAAAAABA/AP//AAAOAAAAABBBAP//AAAOAAAAABBDAP//AAAOAAAAABBFAP//AAAOAAAAABBHAP//AAAOAAAAABBJAP//AAAOAAAAABBLAP//AAAOAAAAABBNAP//AAAOAAAAABBPAP//AAAOAAAAABBRAP//AAAOAAAAABBTAP//AAAOAAAAABBVAP//AAAOAAAAABBXAP//AAAOAAAAABBZAP//AAAOAAAAABBbAP//AAAOAAAAABBdAP//AAAOAAAAABBfAP//AAAOAAAAABBhAP//AAAOAAAAABBjAP//AAAOAAAAABBlAP//AAAOAAAAABBnAP//AAAOAAAAABBpAP//AAAOAAAAABBrAP//AAAOAAAAABBtAP//AAAOAAAAABBvAP//AAAOAAAAABBxAP//AAAOAAAAABBzAP//AAAOAAAAABB1AP//AAAOAAAAABB3AP//AAAOAAAAABB5AP//AAAOAAAAABB7AP//AAAOAAAAABB9AP//AAAOAAAAABB/AP//AAAOAAAAABCBAP//AAAOAAAAABCDAP//AAAOAAAAABCFAP//AAAOAAAAABCHAP//AAAOAAAAABCJAP//AAAOAAAAABCLAP//AAAOAAAAABCNAP//AAAOAAAAABCPAP//AAAOAAAAABCRAP//AAAOAAAAABA=")
+tile_map_data = PackedByteArray("AADh////AAAOAAAAABDl////AAAOAAAAABDp////AAAOAAAAABDt////AAAOAAAAABDx////AAAOAAAAABD1////AAAOAAAAABD5////AAAOAAAAABD9////AAAOAAAAABABAP//AAAOAAAAABAFAP//AAAOAAAAABAJAP//AAAOAAAAABANAP//AAAOAAAAABARAP//AAAOAAAAABAVAP//AAAOAAAAABAZAP//AAAOAAAAABAdAP//AAAOAAAAABAhAP//AAAOAAAAABAlAP//AAAOAAAAABApAP//AAAOAAAAABAtAP//AAAOAAAAABAxAP//AAAOAAAAABA1AP//AAAOAAAAABA5AP//AAAOAAAAABA9AP//AAAOAAAAABBBAP//AAAOAAAAABBFAP//AAAOAAAAABBJAP//AAAOAAAAABBNAP//AAAOAAAAABBRAP//AAAOAAAAABBVAP//AAAOAAAAABBZAP//AAAOAAAAABBdAP//AAAOAAAAABBhAP//AAAOAAAAABBlAP//AAAOAAAAABBpAP//AAAOAAAAABBtAP//AAAOAAAAABBxAP//AAAOAAAAABB1AP//AAAOAAAAABB5AP//AAAOAAAAABB9AP//AAAOAAAAABCBAP//AAAOAAAAABCFAP//AAAOAAAAABCJAP//AAAOAAAAABCNAP//AAAOAAAAABCRAP//AAAOAAAAABA=")
 tile_set = SubResource("TileSet_alqfr")
 
 [node name="background" type="TileMapLayer" parent="Grounds"]
@@ -615,47 +615,68 @@ limit_smoothed = true
 [node name="Bard1" parent="Bards" instance=ExtResource("5_alqfr")]
 position = Vector2(-486, -15)
 
-[node name="Bard2" parent="Bards" instance=ExtResource("6_6ep0u")]
-position = Vector2(-454, -15)
-
 [node name="Bard3" parent="Bards" instance=ExtResource("6_6ep0u")]
 position = Vector2(-422, -15)
-
-[node name="Bard4" parent="Bards" instance=ExtResource("6_6ep0u")]
-position = Vector2(-390, -15)
 
 [node name="Bard5" parent="Bards" instance=ExtResource("7_hrcei")]
 position = Vector2(-358, -15)
 
-[node name="Bard6" parent="Bards" instance=ExtResource("6_6ep0u")]
-position = Vector2(-326, -15)
-
 [node name="Bard7" parent="Bards" instance=ExtResource("5_alqfr")]
 position = Vector2(-294, -15)
-
-[node name="Bard8" parent="Bards" instance=ExtResource("7_hrcei")]
-position = Vector2(-262, -15)
 
 [node name="Bard9" parent="Bards" instance=ExtResource("7_hrcei")]
 position = Vector2(-230, -15)
 
-[node name="Bard10" parent="Bards" instance=ExtResource("6_6ep0u")]
-position = Vector2(-198, -15)
-
 [node name="Bard11" parent="Bards" instance=ExtResource("5_alqfr")]
 position = Vector2(-166, -15)
-
-[node name="Bard12" parent="Bards" instance=ExtResource("5_alqfr")]
-position = Vector2(-134, -15)
 
 [node name="Bard13" parent="Bards" instance=ExtResource("7_hrcei")]
 position = Vector2(-102, -15)
 
-[node name="Bard14" parent="Bards" instance=ExtResource("7_hrcei")]
-position = Vector2(-70, -15)
-
 [node name="Bard15" parent="Bards" instance=ExtResource("6_6ep0u")]
 position = Vector2(-38, -15)
+
+[node name="Bard17" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(26, -15)
+
+[node name="Bard19" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(90, -15)
+
+[node name="Bard21" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(154, -15)
+
+[node name="Bard23" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(218, -15)
+
+[node name="Bard25" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(281, -15)
+
+[node name="Bard27" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(346, -15)
+
+[node name="Bard29" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(410, -15)
+
+[node name="Bard31" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(474, -15)
+
+[node name="Bard33" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(538, -15)
+
+[node name="Bard35" parent="Bards" instance=ExtResource("7_hrcei")]
+position = Vector2(602, -15)
+
+[node name="Bard37" parent="Bards" instance=ExtResource("5_alqfr")]
+position = Vector2(666, -15)
+
+[node name="Bard39" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(730, -15)
+
+[node name="Bard41" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(794, -15)
+
+[node name="Bard43" parent="Bards" instance=ExtResource("6_6ep0u")]
+position = Vector2(858, -15)
 
 [connection signal="body_entered" from="Grounds/versszakok/szekenbelul" to="." method="_on_szekenbelul_body_entered"]
 [connection signal="body_exited" from="Grounds/versszakok/szekenbelul" to="." method="_on_szekenbelul_body_exited"]
