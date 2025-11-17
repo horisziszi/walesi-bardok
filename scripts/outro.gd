@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var outro_collision: CollisionShape2D = $"Grounds/Versszak-grounds/Outro/Outro-collision"
-@onready var outro_hang: AudioStreamPlayer2D = $"Grounds/Versszak-grounds/Outro/Outro-hang"
+@onready var outro_collision: CollisionShape2D = $"Grounds/Outro-script/Outro/Outro-collision"
+@onready var outro_hang: AudioStreamPlayer2D = $"Grounds/Outro-script/Outro/Outro-hang"
 @onready var exit_collision: CollisionShape2D = $"Grounds/Exit/Exit-collision"
 
 var can_exit := false

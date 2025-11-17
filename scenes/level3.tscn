@@ -398,19 +398,201 @@ collision_mask = 2
 [node name="invisible_wall" type="CollisionShape2D" parent="Grounds/Invis"]
 shape = SubResource("WorldBoundaryShape2D_fh4ka")
 
-[node name="Versszak-grounds" type="Node" parent="Grounds"]
+[node name="Outro-script" type="Node" parent="Grounds"]
 
-[node name="Outro" type="Area2D" parent="Grounds/Versszak-grounds"]
+[node name="Outro" type="Area2D" parent="Grounds/Outro-script"]
 collision_mask = 2
 
-[node name="Outro-collision" type="CollisionShape2D" parent="Grounds/Versszak-grounds/Outro"]
+[node name="Outro-collision" type="CollisionShape2D" parent="Grounds/Outro-script/Outro"]
 position = Vector2(9071, -10)
 shape = SubResource("WorldBoundaryShape2D_7uttt")
 
-[node name="Outro-hang" type="AudioStreamPlayer2D" parent="Grounds/Versszak-grounds/Outro"]
+[node name="Outro-hang" type="AudioStreamPlayer2D" parent="Grounds/Outro-script/Outro"]
 stream = ExtResource("4_7uttt")
 attenuation = 0.0009641661
 bus = &"Versszakok"
+
+[node name="Szövegek" type="Node" parent="Grounds/Outro-script"]
+
+[node name="versszak1-1" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak1-2" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak2-1" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak2-2" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak3-1" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak3-2" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak4-1" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak4-2" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak5-1" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak5-2" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak6-1" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak6-2" type="Label" parent="Grounds/Outro-script/Szövegek"]
+offset_left = 297.0
+offset_top = -80.0
+offset_right = 646.0
+offset_bottom = -28.0
+theme_override_fonts/font = ExtResource("5_6lxtr")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Exit" type="Area2D" parent="Grounds"]
 
@@ -440,5 +622,5 @@ limit_right = 9248
 limit_bottom = 70
 limit_smoothed = true
 
-[connection signal="body_entered" from="Grounds/Versszak-grounds/Outro" to="." method="_on_outro_body_entered"]
+[connection signal="body_entered" from="Grounds/Outro-script/Outro" to="." method="_on_outro_body_entered"]
 [connection signal="body_entered" from="Grounds/Exit" to="." method="_on_exit_body_entered"]
