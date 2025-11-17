@@ -81,7 +81,8 @@ func _on_szekenbelul_body_exited(body: Node2D) -> void:
 
 func _input(event):
 	if inside_szek and event.is_action_pressed("interact"):
-
+		left_lock.disabled = false
+		right_lock.disabled = false
 		match next_scene:
 			2:
 				start_Main02()
@@ -115,10 +116,12 @@ func _on_main_02_bard_finished():
 	main02_finished = true
 	next_scene = 3       # Now pressing interact starts Main03
 	szekenbelul.disabled = false
+	
 
 
 func start_Main03():
 	print("Starting Main03")
+	bard_3.queue_free()
 	bard_2.visible = true
 	main_03_kiralynarrator.play()
 	szekenbelul.disabled = true
@@ -133,8 +136,10 @@ func _on_main_03_bard_finished():
 	next_scene = 4
 	szekenbelul.disabled = false
 	
+	
 func start_Main04():
 	print("Starting Main04")
+	bard_2.queue_free()
 	bard_1.visible = true
 	main_04_narrator.play()
 	szekenbelul.disabled = true
@@ -148,9 +153,11 @@ func _on_main_04_bard_finished():
 	main04_finished = true
 	next_scene = 5
 	szekenbelul.disabled = false
+	
 
 func start_Main05():
 	print("Starting Main05")
+	bard_1.queue_free()
 	main_05_kiralynarrator.play()
 	next_scene = 0
 	
