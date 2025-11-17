@@ -390,33 +390,194 @@ position = Vector2(-341, 3)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Grounds/Killzone"]
 shape = SubResource("WorldBoundaryShape2D_iywne")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Grounds"]
+[node name="Invis" type="StaticBody2D" parent="Grounds"]
 collision_mask = 2
 
-[node name="invisible_wall" type="CollisionShape2D" parent="Grounds/StaticBody2D"]
+[node name="invisible_wall" type="CollisionShape2D" parent="Grounds/Invis"]
 shape = SubResource("WorldBoundaryShape2D_yqjtg")
 
-[node name="Versszak-grounds" type="Node" parent="Grounds"]
+[node name="Intro-script" type="Node" parent="Grounds"]
 
-[node name="Intro" type="Area2D" parent="Grounds/Versszak-grounds"]
+[node name="Intro" type="Area2D" parent="Grounds/Intro-script"]
 collision_mask = 2
 
-[node name="Intro-collision" type="CollisionShape2D" parent="Grounds/Versszak-grounds/Intro"]
+[node name="Intro-collision" type="CollisionShape2D" parent="Grounds/Intro-script/Intro"]
 position = Vector2(384, 0)
 shape = SubResource("WorldBoundaryShape2D_p57ef")
 
-[node name="Intro-hang" type="AudioStreamPlayer2D" parent="Grounds/Versszak-grounds/Intro"]
+[node name="Intro-hang" type="AudioStreamPlayer2D" parent="Grounds/Intro-script/Intro"]
 stream = ExtResource("4_conm7")
 bus = &"Versszakok"
+
+[node name="Szövegek" type="Node" parent="Grounds/Intro-script"]
+
+[node name="versszak1-2" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 871.0
+offset_top = -70.0
+offset_right = 1220.0
+offset_bottom = -18.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Hadd látom, úgymond, mennyit ér
+A velszi tartomány.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak1-1" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 206.0
+offset_top = -65.0
+offset_right = 555.0
+offset_bottom = -13.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován: 
+
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak2-1" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 1609.0
+offset_top = -76.0
+offset_right = 1802.0
+offset_bottom = -18.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Van-e ott folyó és földje jó?
+Legelőin fű kövér?
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak2-2" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 2121.0
+offset_top = -75.0
+offset_right = 2470.0
+offset_bottom = -23.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Használt-e a megöntözés:
+A pártos honfivér?
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak3-1" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 2862.0
+offset_top = -82.0
+offset_right = 3211.0
+offset_bottom = -30.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "S a nép, az istenadta nép,
+Ha oly boldog-e rajt'
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak3-2" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 3708.0
+offset_top = -87.0
+offset_right = 4057.0
+offset_bottom = -35.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Mint akarom, s mint a barom,
+Melyet igába hajt?
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak4-1" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 4430.0
+offset_top = -90.0
+offset_right = 4779.0
+offset_bottom = -38.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Felség! valóban koronád
+Legszebb gyémántja Velsz:
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak4-2" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 5178.0
+offset_top = -92.0
+offset_right = 5527.0
+offset_bottom = -40.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Földet, folyót, legelni jót,
+Hegy-völgyet benne lelsz.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak5-1" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 6195.0
+offset_top = -87.0
+offset_right = 6544.0
+offset_bottom = -35.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "S a nép, az istenadta nép
+Oly boldog rajta, Sire!
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak5-2" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 7152.0
+offset_top = -96.0
+offset_right = 7501.0
+offset_bottom = -44.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Kunyhói mind hallgatva, mint
+Megannyi puszta sir.
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak6-1" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 7981.0
+offset_top = -101.0
+offset_right = 8330.0
+offset_bottom = -49.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Edward király, angol király
+Léptet fakó lován:
+
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="versszak6-2" type="Label" parent="Grounds/Intro-script/Szövegek"]
+offset_left = 8639.0
+offset_top = -105.0
+offset_right = 8988.0
+offset_bottom = -53.0
+theme_override_fonts/font = ExtResource("6_ejswk")
+theme_override_font_sizes/font_size = 8
+text = "Körötte csend amerre ment,
+És néma tartomány.
+ 
+ "
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Nextlevel" parent="Grounds" instance=ExtResource("6_u3awl")]
 position = Vector2(9216, 0)
 
 [node name="Label" type="Label" parent="Grounds/Nextlevel"]
-offset_left = -105.0
-offset_top = -91.0
-offset_right = -1.0
-offset_bottom = -17.0
+offset_left = -110.0
+offset_top = -93.0
+offset_right = -6.0
+offset_bottom = -19.0
 theme_override_colors/font_color = Color(0.078431375, 0.59607846, 0.8627451, 1)
 theme_override_fonts/font = ExtResource("6_ejswk")
 theme_override_font_sizes/font_size = 8
@@ -434,6 +595,6 @@ limit_right = 9248
 limit_bottom = 70
 limit_smoothed = true
 
-[connection signal="body_entered" from="Grounds/Versszak-grounds/Intro" to="." method="_on_intro_body_entered"]
-[connection signal="body_entered" from="Grounds/Versszak-grounds/Intro" to="." method="_on_elso_body_entered"]
+[connection signal="body_entered" from="Grounds/Intro-script/Intro" to="." method="_on_intro_body_entered"]
+[connection signal="body_entered" from="Grounds/Intro-script/Intro" to="." method="_on_elso_body_entered"]
 [connection signal="body_entered" from="Grounds/Nextlevel" to="." method="_on_nextlevel_body_entered"]

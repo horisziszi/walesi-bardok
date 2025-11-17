@@ -42,12 +42,14 @@ animations = [{
 radius = 4.0
 
 [node name="Bard1" type="Area2D"]
+collision_layer = 4
+collision_mask = 4
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_hce0f")
 autoplay = "default"
-frame_progress = 0.5698422
+frame_progress = 0.2657696
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)

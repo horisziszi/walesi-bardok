@@ -1,6 +1,6 @@
 extends Node2D
-@onready var intro_collision: CollisionShape2D = $"Grounds/Versszak-grounds/Intro/Intro-collision"
-@onready var intro_hang: AudioStreamPlayer2D = $"Grounds/Versszak-grounds/Intro/Intro-hang"
+@onready var intro_collision: CollisionShape2D = $"Grounds/Intro-script/Intro/Intro-collision"
+@onready var intro_hang: AudioStreamPlayer2D = $"Grounds/Intro-script/Intro/Intro-hang"
 
 
 
